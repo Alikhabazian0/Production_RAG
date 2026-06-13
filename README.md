@@ -184,6 +184,8 @@ Benefits:
 * Superior retrieval quality on Persian queries
 * Better handling of paraphrases
 
+results table:
+
 | Embedding Model | HitRate@3 | HitRate@5 |
 | --------------- | --------- | --------- |
 | MiniLM-L12-v2   | 85%       | 90%       |
@@ -354,8 +356,6 @@ FastAPI   : http://localhost:8000
 Swagger   : http://localhost:8000/docs
 Streamlit : http://localhost:8501
 ```
-
----
 
 ---
 
