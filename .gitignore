@@ -1,0 +1,28 @@
+# Virtual env
+.venv/
+
+# Secrets
+.env
+
+# python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Vector DB
+old_vector_db/
+vector_db/
+
+# Streamlit
+.streamlit/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# HuggingFace cache (optional)
+.cache/

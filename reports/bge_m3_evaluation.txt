@@ -1,0 +1,14 @@
+Embedding Model:
+BAAI/bge-m3
+
+Evaluation Dataset:
+20 Persian QA queries
+
+Results:
+HitRate@3 = 100%
+HitRate@5 = 100%
+
+Observations:
+- Improved retrieval quality on paraphrased queries
+- Better multilingual semantic understanding
+- Selected as final production embedding model

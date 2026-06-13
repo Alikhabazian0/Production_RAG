@@ -1,0 +1,14 @@
+Embedding Model:
+sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+
+Evaluation Dataset:
+20 Persian QA queries
+
+Results:
+HitRate@3 = 85%
+HitRate@5 = 90%
+
+Observations:
+- Failed on some paraphrased financial questions
+- Confused leasing, guarantees, loans and rent-deposit services
+- Served as baseline embedding model
