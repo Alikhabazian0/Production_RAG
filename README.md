@@ -184,6 +184,11 @@ Benefits:
 * Superior retrieval quality on Persian queries
 * Better handling of paraphrases
 
+| Embedding Model | HitRate@3 | HitRate@5 |
+| --------------- | --------- | --------- |
+| MiniLM-L12-v2   | 85%       | 90%       |
+| BGE-M3          | 100%      | 100%      |
+
 ---
 
 # Evaluation Methodology
@@ -349,6 +354,38 @@ FastAPI   : http://localhost:8000
 Swagger   : http://localhost:8000/docs
 Streamlit : http://localhost:8501
 ```
+
+---
+
+---
+
+## Docker Validation
+
+The Dockerized application was successfully tested with Docker Compose.
+
+Verified components:
+
+- FastAPI backend running on port 8000
+- Streamlit frontend running on port 8501
+- ChromaDB vector store loading correctly
+- BGE-M3 embedding model retrieval working
+- Gemini API integration working
+- End-to-end question answering pipeline validated
+
+Example query:
+
+```text
+شرکت دانش بنیان چیست؟
+```
+
+Returned:
+- Correct answer generated from retrieved context
+- Source attribution (row_id and question)
+- Top-k retrieved documents
+
+Notes:
+- Hugging Face cache volume mounting was used to reuse the locally downloaded BGE-M3 model and avoid repeated model downloads inside Docker containers.
+- Docker images were successfully built and executed using Docker Compose.
 
 ---
 
